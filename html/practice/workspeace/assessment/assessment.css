@@ -1,0 +1,32 @@
+body {
+    background-color: #04a6eb; 
+    color: #fdffff;
+    width: 500px; /* body内で中心揃えで幅を500pxに設定*/
+    margin-right: auto; /* 右側のマージン（余白）を自動調整 */
+    margin-left: auto; /* 左側のマージン（余白）を自動調整 */
+}
+/*
+#ffffff
+16進数カラーコード。
+カラースキームで検索すると配色を提案してくれるサイトが見つかる。
+配色理論、色彩調和論などに基づいて色選びをするとおしゃれなサイトを作成できる。
+カラースキーム参考URL：https://coolors.co/
+
+margin
+要素の外側の余白をあけてレイアウトできる。
+*/
+
+button {
+    padding: 5px 20px; /* 上下を5px　左右を20px */
+    background-color: #337ab7; /* ボタンの背景 */
+    color: #fdffff; /* カラー類などまとめる方が見やすい？ */
+    border-style: none; /* 境界線を表示しない */
+}
+/*
+padding
+要素の内側の余白を設定できる
+*/
+
+input {
+    height: 20px; /* 入力欄の高さを2、入力欄の中心揃えで20pxに設定 */
+}

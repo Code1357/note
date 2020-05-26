@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta charaset~ 文字化けを防ぐ設定-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--merta name~ 画面領域の設定-->
+    <title>練習-N水族館</title>
+    <!--title~ ブラウザのタグname設定-->
+    <link rel="stylesheet" href="./normalize.css">
+    <!--リセットCSSのリンクは必ず他のCSSの真上に追加すること-->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerInner">
+            <h1 class="logo">HTML5の基本</h1>
+            <nav class="globalNav"><a href="inquiry_form.html">お問い合わせ</a></nav>
+            <!--nav ナビゲーションタグ-->
+        </div>
+    </header>
+    <main>
+        <div class="keyVisual"><img src="images-1.jpeg" alt="プログラミング" width="1200" height="200"></div>
+        <!--ヘッダーとコンテンツの間に入れるものを、キービジュアルという。一番目立つ場所に表示される画像で、ユーザを印象づける目的がある-->
+        <div class="mainInner">
+            <ol>
+                <li>りんご</li>
+                <li>みかん</li>
+                <li>スイカ</li>
+            </ol>
+            <dl>ここからは説明リスト
+                <!--dl(説明リスト)>dt(項目),dd(説明) と入れ子にして使う-->
+                <dt>りんご</dt>
+                <dd>りんごは赤くて甘い果物です</dd>
+                <dd>木になっています</dd>
+                <dd>青森県はりんごの生産量が日本一です</dd>
+                <dd>青いりんごもあります</dd>
+                <dt>みかん</dt>
+                <dd>みかんはオレンジ色で少し酸っぱい果物です</dd>
+                <dt>スイカ</dt>
+                <dd>スイカは夏によく食べる果物です</dd>
+            </dl>
+            <table>
+                <!--表全体を括る-->
+                <caption>料金表</caption>
+                <!--表組のタイトル-->
+                <tr>
+                    <!--行-->
+                    <th>松</th>
+                    <!--見出し-->
+                    <td>10,000円</td>
+                    <!--データセル-->
+                </tr>
+                <tr>
+                    <!--行-->
+                    <th>竹</th>
+                    <!--見出し-->
+                    <td>8,000円</td>
+                    <!--データセル-->
+                </tr>
+                <tr>
+                    <!--行-->
+                    <th>梅</th>
+                    <!--見出し-->
+                    <td>5,000円</td>
+                    <!--データセル-->
+                </tr>
+            </table>
+            <p>
+                <strong>注意！</strong>ダウンロードは一度きりしかできません！
+                <!--strong 重要性が高い,強調-->
+            </p>
+            <p class="bold">単純に太字にしたい時は、CSSで font-weight を使いましょう</p>
+            <p>
+                囲った部分が<span>赤色</span>になります
+                <!--span divタグと一緒で意味がない, まとまりを作る役割, divはブロック要素:spanはインライン要素-->
+            </p>
+            <p>br は、見栄え（レイアウト）のために使うのではなく、文章の改行が必要な場合に使うこと。</p>
+            <article>
+                <section>
+                    <div class="aboutWrapper">
+                        <h2>水族館とは</h2>
+                        <p class="clearfix"><img src="pic1.jpg" width="150"
+                                height="150">N水族館は、VR・AR・プロジェクションマッピング・モーションキャプチャーなどの最先端技術を取り入れ、ネットとリアルを融合させた次世代の水族館です。展示面積は世界最大規模で、さまざまな海の魚や海の動物達を間近で見ることができます。大迫力の巨大水槽や、独自の特殊効果を取り入れたイルカのショーなど、子供から大人まで楽しめる施設になっています。
+                        </p>
+                    </div>
+                </section>
+                <!--section 章や節といった文章のかたまり-->
+                <section>
+                    <div class="aboutWrapper">
+                        <h2>VR HMDをかぶって海の中へ</h2>
+                        <p class="clearfix"><img src="pic2.jpg" width="150" height="150">用意されたVR
+                            HMD（ヘッドマウントディスプレイ）をかぶると、まるで巨大水槽のど真ん中にいるかのような状況が再現されます。モーションキャプチャーによってお客様の動きを読み取り、巨大水槽の中を自由に動き回ることが可能です。また時間帯によっては魚たちに餌付け体験が出来たり、お客様同士でゲームを楽しむことも出来ます。ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div class="aboutWrapper">
+                        <h2>バーチャルキャストによるイルカのショー</h2>
+                        <!--下記は文字の回り込みの練習-->
+                        <p class="clearfix"><img src="pic3.jpg" width="150"
+                                height="150">イルカのショーには、人間ではなくN水族館オリジナルのバーチャルキャストが登場します。また、手元のスマートフォンからコメントやアクションを送信すると、リアルタイムに演出に反映され、インタラクティブなイルカショーを楽しむことができます。音楽や照明などの演出は毎回ランダムに生成されるため、見るたびに違う内容が上映されます。
+                        </p>
+                    </div>
+                </section>
+            </article>
+            <!--article 独立したコンテンツ-->
+            <article>
+                <div class="priceWrapper">
+                    <h2>料金について</h2>
+                    <p>1Fチケットセンターにてお買い求めいただけます</p>
+                    <table>
+                        <tr>
+                            <th>大人</th>
+                            <td>1,500円</td>
+                        </tr>
+                        <tr>
+                            <th>子供</th>
+                            <td>800円</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <div class="notWrapper">
+                    <h2>ご注意</h2>
+                    <ul>
+                        <li>水族館は<strong>全館禁止</strong>でございます。</li>
+                        <li>一度ご購入された入場券の払い戻しはできません。</li>
+                        <li>営業時間・営業内容を予告なく変更する場合がございますので、あらかじめご了承ください。</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+    <!--main 主要なコンテンツ-->
+
+    <main>
+        <div class="space">
+            <p class="inline">練習-インラインブロック、インライン,ブロック</p>
+            <p>■display: で可能</p>
+            <a class="alink" href="">aタグ：inline ＞ inline-blockへ変更</a>
+            <a class="blink" href="">aタグ：inline ＞ blockへ変更</a>
+            <a class="clink" href="">aタグ：inline のまま</a>
+            <p class="pinline">pタグ: block ＞ inlineへ変更</p>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footerInner">
+            <small>&copy; ちょこ 2020</small>
+            <!--small 免責、警告、著作権などの注釈や細目を表す-->
+            <!--&copy; ブラウザ上では ©︎ と表示される, 特殊文字は、& と指定コードと ; で記述する-->
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+<!--
+    -ブロックレベル要素：縦積み, marginやpaddingは上下左右可能
+    -header,
+    footer,
+    main,
+    aside,
+    ul,
+    ol,
+    li,
+    dl,
+    dt,
+    dd,
+    table,
+    h1~h6,
+    p,
+    div,
+    from
+    
+    -インライン要素：横並び, marginやpaddingは左右しか設定できない
+    a,stong,br,img,label,input,button,textarea
+-->

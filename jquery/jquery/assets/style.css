@@ -1,0 +1,14 @@
+#scroll{
+  height: 1000px;
+}
+#scroll-position{
+  position: fixed; /*固定*/
+  width: 100%;
+  top: 400px;
+  text-align: center;
+}
+
+#btn_3 {
+  display: block;
+  margin: 20px 0px;
+}

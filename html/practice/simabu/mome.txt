@@ -1,0 +1,9 @@
+バックエンドで使われる需要のある言語は、Node.js
+Node.jsは、JavaScriptであるので、フロントエンドで必須のJavaScriptをしっかり学習すれば、応用が効く
+有名はフレームワークは、React,Vue,Angularがある
+Reactがおすすめ
+型付きJavascriptのTipeScriptの勢いがすごい
+実はJavaScriptのReactNativeを使えば、モバイルアプリ開発もできる（iOSも可能になる）
+デスクトップアプリ開発もできる（Electron,PWA)
+機械学習用ライブラリ（TensorFlow.js)
+スクレイピングや自動化（Puppeteer)

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML について</title>
+</head>
+
+<body>
+    <h1>HTML について</h1>
+    <!--見出しのこと/見出しは、h1～h6まであり、字の大きさがh1＞h6と小さくなる-->
+    <h3>様々な HTML タグ</h3>
+    <p>HTML タグは、文章をマークアップすることで、
+        <br>文章に意味を与えることができます
+            <a href="http://www.nnn.ed.nico/">N予備校のホームページ</a>
+    </p>
+    <!--<p>は、段落。タグの前後に適当な余白ができる-->
+    <!--<br>は<p></p>の中に記述しても改行できる-->
+    <!--aはリンクを追加できる-->
+    <img src="https://www.nnn.ed.nico/pages_assets/images/index/feature/logo-7aaf175200a6b7643a12c35862b02564.png" alt="N予備校のロゴ">
+    <!--imgは画像を追加/srcは画像のURL/altは代替テキストで入力する事が推奨される-->
+    <p>p タグは、段落を表すので、p タグごとに隙間が空いた改行になります</p>
+    <ul> <!--ul リスト親要素/ol 親要素もある--> <!--リストを一度に記述する例：ul*6 -->
+        <li>h タグ</li> <!--li リスト子要素-->
+        <li>p タグ</li>
+        <li>a　タグ</li>
+        <li>img タグ</li>
+        <li>ul タグ</li>
+        <li>table タグ</li>
+    </ul>
+    <!--tableは表を作成できる--> <!--表を一度に作成する例：table>(tr>th*2)+(tr>td*2)*6 -->
+    <table> <!--thやtdの間に記述すると表ができる-->
+        <tr>　<!--trは、table row 表の1行（横）-->
+            <th>タグ名</th> <!--thは、table header 表の見出し-->
+            <th>意味</th>
+        </tr>
+        <tr>
+            <td>h</td> <!--tdは、table data 表の中身-->
+            <td>見出し</td>
+        </tr>
+        <tr>
+            <td>p</td>
+            <td>段落</td>
+        </tr>
+        <tr>
+            <td>a</a></td>
+            <td>リンク</td>
+        </tr>
+        <tr>
+            <td>img</td>
+            <td>画像</td>
+        </tr>
+        <tr>
+            <td>ul</td>
+            <td>順序なしリスト</td>
+        </tr>
+        <tr>
+            <td>table</td>
+            <td>表</td>
+        </tr>
+    </table>
+
+<ul>
+    <li>PC
+        <ul>
+            <li>Windows</li>
+            <li>Mac</li>
+            <li>Linux</li>
+        </ul>
+    </li>
+    <li>スマホ
+        <ul>
+            <li>iOS</li>
+            <li>Android</li>
+            <li>Windows Phone</li>
+        </ul>
+    </li>
+</ul>
+</body>
+
+<ul>
+    <li>プログラミング</li>
+    <ul>
+        <li>App作成
+            <ol>
+                <li>Android-JAVA</li>
+                <li>iOS-Swift</li>
+            </ol>
+        </li>
+    </ul>
+    <ul>
+        <li>ホームページ
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Js</li>
+            </ol>
+        </li>
+    </ul>
+</ul>
+
+</html>

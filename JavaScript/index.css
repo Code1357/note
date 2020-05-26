@@ -1,0 +1,42 @@
+/* アナログ時計作成 */
+
+/*
+.class {
+  border-radius: 50%;
+  border: 3px solid red;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.lineHour {
+  width: 10px;
+  height: 150px;
+  background: yellow;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 5px);
+  transform-origin: bottom;
+}
+
+.lineMin {
+  width: 4px;
+  height: 200px;
+  background: yellowgreen;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 2px);
+  transform-origin: bottom;
+}
+
+.lineSec {
+  width: 2px;
+  height: 200px;
+  background: #cccccc;
+  position: absolute;
+  top: calc(50% -200px);
+  left: cala(50% - 1px);
+  transform-origin: bottom;
+}
+*/

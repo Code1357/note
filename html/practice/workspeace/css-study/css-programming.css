@@ -1,0 +1,21 @@
+/*HTMLのclassの紐付け*/
+.face {
+    color: red;
+}
+.back {
+    color: red;
+    opacity: 0.4;
+}
+
+.haru {
+    color: darkgoldenrod;
+}
+#iddayo {
+    color: blueviolet;
+}
+.kurasu {
+    color: chocolate;
+}
+h3 {
+    color: cornflowerblue;
+}

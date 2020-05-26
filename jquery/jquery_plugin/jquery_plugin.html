@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--ここからjQueryに必要なもの-->
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+
+  <!--ここからlightboxに必要なもの-->
+  <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css">
+  <script src="node_modules/lightbox2/dist/js/lightbox.js"></script>
+
+  <!--ここからlightcaseに必要なもの-->
+  <link rel="stylesheet" type="text/css" href="lightcase-2.5.0/src/css/lightcase.css">
+  <script type="text/javascript" src="lightcase-2.5.0/src/js/lightcase.js"></script>
+
+<!--ここからMyjQueryのファイルを読み込み/lightcaseを動作する内容含む-->
+<!--lightcaseのjsコードを別ファイルから読み込む時はHTMLへの記述順番を遵守-->
+<script src="jquery_plugin.js"></script>
+
+  <!--ここからTitle-->
+  <title>jquery プラグインで遊んでみる</title>
+</head>
+
+<body>
+  <!--lightbox-->
+  <a href="img/hqdefault.jpg" data-lightbox="hqdefault" data-title="引用:https://machicon.jp/ivery/column/78219googl"><img src="img/hqdefault.jpg" alt="可愛いねこ" width="250" height="200"></a>
+
+  <!--lightcase-->
+  <!--hrefのURLは、埋め込みのURL取得が必要-->
+  <a href="https://www.youtube.com/embed/R1Bvd_tJlEg" data-rel="lightcase" data-title="引用:https://youtu.be/R1Bvd_tJlEg"><img src="img/youtube_nami.png" alt="美しい海と癒しのBGM" width="250" height="200"></a>
+</body>
+
+</html>
+

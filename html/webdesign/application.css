@@ -1,0 +1,107 @@
+@import url("import.css");
+
+/*画像などの角を削る*/
+.border {
+    border-radius: 500px;
+}
+
+/*
+グラデーションを作成してくれるサイトがある
+参考URL：https://www.colorzilla.com/gradient-editor/
+CSSジェネレーターでコードを出力される。
+
+ベンダープレフィックスを設定しないと、一部のブラウザ正常に表示しない事がある
+-webkit-：Google Chrome・Safari・Microsoft Edge
+-moz-：Firefox
+-ms-：Internet Explore
+参考URL：https://caniuse.com/
+*/
+
+/*行の高さ(行間)を調整する*/
+.line-height {
+    width: 300px;
+    margin: auto;
+    line-height: 2;
+    letter-spacing: -3px;
+}
+
+/*
+文字の間を調整する
+letter-spaching; px:
+マイナス指定も可能
+*/
+
+
+/*
+line-height の仕組みを使ってボタンを作る
+*/
+.line-height-button {
+    width: 150px;
+    height: 30;
+    display: inline-block;
+    background: #9b4dca;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+/*
+hover
+transition
+などで変化をつける事もできる
+*/
+
+/*
+二つの要素を座標を使って自由に重ねる事がきる
+重ねる順番はコードの上からの順に再背面になる
+*/
+
+/*
+それぞれ原点を決めて、
+要素は回転もできる
+要素は傾斜させる事もできる
+要素は拡大縮小する事もできる
+*/
+
+/*
+複雑にアニメーションする方法もある
+CSS Animation というもの
+そして、キーフレームアニメーションという。
+アニメーションの開始から終了まで特定の地点ごとにプロパティを決めれる
+*/
+
+/*例１*/
+.line-height{
+    width: 50px;
+    height: 50px;
+    margin: 30px auto;
+    /* ここからanimationを追加 */
+    animation: loading-animation 1s linear infinite;
+  }
+  
+  @keyframes loading-animation {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*例２*/
+  .line-height-button {
+    text-align: center;
+    /* ここからanimationを追加 */
+    animation: buruburu-animation .1s infinite;
+  }
+  
+  @keyframes buruburu-animation {
+    0% {transform: translate(0px, 0px)}
+    25% {transform: translate(3px, 3px)}
+    50% {transform: translate(0px, 3px)}
+    75% {transform: translate(3px, 0px)}
+    100% {transform: translate(0px, 0px)}
+  }
+  

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
+    <!--meta name="viewport"~ レスポンシブにするための準備-->
+    <!--user-scalable=yes　ページをズームするかどうかの許可-->
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="inquiry_form.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Page</h1>
+        <!--通常メニュー-->
+        <div id="nav_list">
+            <ul>
+                <li><a href="#">Top</a></li>
+                <li><a href="#">Game</a></li>
+                <li><a href="#">Price guide</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!--ハンバーガーメニュー引き出し-->
+        <div id="nav_drawer">
+            <input type="checkbox" class="nav-unshown" id="nav-input" name="nav-input">
+            <!--常に非表示に-->
+            <label for="nav-input" id="nav-open"><span></span></label>
+            <!--ここで「三」を表示。inputがチェックされる-->
+            <label for="nav-input" class="nav-unshown" id="nav-close"></label>
+            <!--はじめは非表示。inputのチェック解除-->
+            <div id="nav-content">
+                <ul>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">Price guide</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--表示される中身。inputのチェックの有無に連動して表示⇄非表示となる-->
+    </header>
+    <main>
+        <form action="thanks.html">
+            <!--フォーム全体,method 送信方法-->
+            <table class="contactForm">
+                <tr>
+                    <th><label for="name">Name.</label>
+                        <!--label エリア入力タグとidで紐づけを行い、項目名をつけることができる-->
+                    </th>
+                    <td><input type="text" name="name" id="name">
+                        <!--type="text" １行入力欄-->
+                        <!--placeholder 入力エリの中に薄く説明文を記す-->
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender.</th>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male"><label for="male"
+                            class="rdio_otn">Male</label>
+                        <input type="radio" name="gender" id="female" value="female"><label for="female"
+                            class="rdio_otn">Female</label>
+                        <!--input type="radio" ラジオボタンの挿入, 属性name で共通の中で1つだけ選択できる-->
+                    </td>
+                </tr>
+                <tr>
+                    <th>Age.</th>
+                    <td>
+                        <div class="selectBox">
+                            <select name="age" class="age">
+                                <option value="10">age under 10</option>
+                                <option value="10">10age</option>
+                                <option value="20">20age</option>
+                                <option value="30">30age</option>
+                                <option value="40">40age</option>
+                                <option value="other">
+                                    age over 50</option>
+                            </select>
+                        </div>
+                        <!--select nameは任意の属性, 子要素にoption を設定 valueは任意の値-->
+                        <!--select name="" multiple を記述すると複数セレクトできる-->
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="title">Title.</label></th>
+                    <td>
+                        <input type="text" name="title" id="title">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="textarea">
+                        <label for="form">Form.</label>
+                    </th>
+                    <td>
+                        <textarea name="form" cols="50" rows="10" id="form"
+                            placeholder="こちらにお問い合わせの内容を記入してください"></textarea>
+                        <!--textarea 複数行の入力エリアを作成できる
+                        cols 横幅、文字数で指定, rows 高さ、文字数で指定-->
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="center">
+            <div class="center">
+                <input type="checkbox" id="check"><label for="check">個人情報の取り扱いに同意します</label>
+                <!--input type="checkbox" チェックボックス, 複数選択が可能-->
+            </div>
+        </div>
+        <div class="text-center">
+            <input type="submit" value="Send">
+            <!--type="submit" 入力ボタン, value ボタンに表示する名前-->
+        </div>
+    </main>
+    <footer>
+        <div class="footerInner">
+            <small>&copy; choko 2020</small>
+        </div>
+    </footer>
+</body>
+
+
+</html>

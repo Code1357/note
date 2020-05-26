@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+.omikujiResultInner {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    line-height: 300px;
+    font-size: 100px;
+    font-weight: bold;
+    background: yellow;
+}
+
+/*下記参考：https://qiita.com/masamitsu-konya/items/cf999b5a8ff7323d7ba2*/
+#omikujiImg {
+    transition: 1000ms; 
+}
+.buruburu {
+    text-align: center;
+    animation: buruburu-animation .1s infinite; /*infinite（無限に繰り返す）, 数値*/
+}
+/*@keyframes を記述する際は、animarion で設定した同じ名前を設定する必要がある(@keyframes と animarion はセットで使う)*/
+@keyframes buruburu-animation {
+  0% {transform: translate(0px, 0px)} /*Y軸,X軸を設定した画像を移動させる。複数設定によりランダムに振っているように見える*/
+  25% {transform: translate(10px, 10px)}
+  50% {transform: translate(0px, 10px)}
+  75% {transform: translate(10px, 0px)}
+  100% {transform: translate(0px, 0px)} /*%は、アニメーションしたい推移ポイントを設定。５回アニメーションを起こしている設定となる*/
+}
+.rotate {
+    transform: rotate(-180deg); /*-180度(deg)回転*/
+  }
